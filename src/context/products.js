@@ -5,8 +5,6 @@ import { featuredProducts } from "../utils/helpers";
 
 export const ProductContext = React.createContext();
 
-// method createContext getting me back  3 things - ProductProvider(send this to index.js), Consumer, useContext(224)
-
 export default function ProductProvider({ children }) {
   const [loading, setLoading] = React.useState(false);
   const [products, setProducts] = React.useState([]);
@@ -22,13 +20,6 @@ export default function ProductProvider({ children }) {
     });
     return () => {};
   }, []);
-
-  // useEffect(228)
-  // let's perform site effects - data fetching, window event listener
-  // by default runs after every render
-  // callback function as first parameter by default
-  // returns cleanup function to avoid memory leaks, so cannot be async
-  // second argument - array of values(dependencies)
 
   return (
     <ProductContext.Provider

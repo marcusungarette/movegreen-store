@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export default function Product({ image, title, id, price }) {
-  const url = image.url; // ls 232 - 253(refactored)
+  const url = image.url;
   return (
     <article className="product">
       <div className="img-container">

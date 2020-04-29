@@ -1,12 +1,11 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { ProductContext } from "../context/products";
-import { CartContext } from "../context/cart"; //lesson 243
+import { CartContext } from "../context/cart";
 import { useHistory } from "react-router-dom";
 import Loading from "../components/Loading";
 
 export default function ProductDetails() {
-  //ls 234
   const { id } = useParams();
   const history = useHistory();
   const { products } = React.useContext(ProductContext);
@@ -14,11 +13,9 @@ export default function ProductDetails() {
 
   const product = products.find((item) => item.id === parseInt(id));
   if (products.length === 0) {
-    //if an arrays is empty
     return <Loading />;
   } else {
     const {
-      // destructuring
       image: { url },
       title,
       price,

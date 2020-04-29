@@ -2,9 +2,7 @@ import React from "react";
 import { FaAngleUp, FaAngleDown } from "react-icons/fa";
 import { CartContext } from "../../context/cart";
 
-//ls 238
 export default function CartItem({ id, image, title, price, amount }) {
-  // cart context
   const { removeItem, increaseAmount, decreaseAmount } = React.useContext(
     CartContext
   );

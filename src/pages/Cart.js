@@ -4,9 +4,7 @@ import { UserContext } from "../context/user"; // ls 268
 import EmptyCart from "../components/Cart/EmptyCart";
 import CartItem from "../components/Cart/CartItem";
 import { Link } from "react-router-dom";
-//import { UserContext } from 'react-router/dom';
 
-//ls 235 - 236 - 237
 export default function Cart() {
   const { cart, total } = React.useContext(CartContext);
   const { user } = React.useContext(UserContext);
@@ -23,7 +21,7 @@ export default function Cart() {
       })}
       <h2>total : R$ {total}</h2>
 
-      {user.token ? ( // Ternary Operator
+      {user.token ? (
         <Link to="/checkout" className="btn btn-primary btn-block">
           Finalizar Pedido
         </Link>

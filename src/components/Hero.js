@@ -1,6 +1,5 @@
 import React from "react";
 
-// IMAGE, TEXT and MORE
 export default function Hero({ children }) {
   return (
     <div className="hero">

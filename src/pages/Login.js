@@ -46,8 +46,6 @@ export default function Login() {
       response = await registerUser({ email, password, username });
     }
 
-    // send object from - /context/user.js
-    // get tokenJWT
     if (response) {
       const {
         jwt: token,
@@ -64,7 +62,7 @@ export default function Login() {
         msg: `Boas compras ${username} `,
       });
 
-      history.push("/products"); // if success navigate away
+      history.push("/products");
     } else {
       showAlert({
         msg: "Por favor tente novamente",
@@ -77,7 +75,6 @@ export default function Login() {
     <section className="form section">
       <h2 className="section-title">{isMember ? "Entrar" : "Cadastrar-se"}</h2>
       <form className="login-form">
-        {/* single input */}
         <div className="form-control">
           <label htmlFor="email">Email</label>
           <input
@@ -87,8 +84,7 @@ export default function Login() {
             onChange={(e) => setEmail(e.target.value)}
           />
         </div>
-        {/* end of single input */}
-        {/* single input */}
+
         <div className="form-control">
           <label htmlFor="password">Senha</label>
           <input
@@ -98,8 +94,7 @@ export default function Login() {
             onChange={(e) => setPassword(e.target.value)}
           />
         </div>
-        {/* end of single input */}
-        {/* single input */}
+
         {!isMember && (
           <div className="form-control">
             <label htmlFor="username">Usuário</label>
@@ -111,12 +106,11 @@ export default function Login() {
             />
           </div>
         )}
-        {/* end of single input */}
-        {/* empty form text */}
+
         {isEmpty && (
           <p className="form-empty">Por favor, preencha seus dados.</p>
         )}
-        {/* submit btn */}
+
         {!isEmpty && (
           <button
             type="submit"
@@ -126,7 +120,7 @@ export default function Login() {
             Entrar
           </button>
         )}
-        {/* register link */}
+
         <p className="register-link">
           {isMember ? "Cadastre-se -" : "Ja sou cadastrado"}
           <button type="button" onClick={toggleMember}>

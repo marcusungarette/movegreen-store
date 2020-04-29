@@ -11,15 +11,13 @@ import {
 } from "react-stripe-elements";
 import submitOrder from "../strapi/submitOrder";
 
-//ls 270 - 271 - 274 - 277 - 278
-
 function Checkout(props) {
   const { cart, total, clearCart } = React.useContext(CartContext);
 
   const { user, showAlert, hideAlert, alert } = React.useContext(UserContext);
 
   const history = useHistory();
-  // state values
+
   const [name, setName] = React.useState("");
   const [error, setError] = React.useState("");
   const isEmpty = !name || alert.show;
@@ -67,7 +65,7 @@ function Checkout(props) {
         <h3>
           Total do Pedido : <span>R${total}</span>
         </h3>
-        {/* single input */}
+
         <div className="form-control">
           <label htmlFor="name">Nome</label>
           <input
@@ -79,8 +77,7 @@ function Checkout(props) {
             }}
           />
         </div>
-        {/* end of single input */}
-        {/* card element */}
+
         <div className="stripe-input">
           <label htmlFor="cartd-element">Cartão de crédito ou débito</label>
           <p className="stripe-info">
@@ -90,12 +87,11 @@ function Checkout(props) {
             Coloque o CVC do seu Cartão de crédito
           </p>
         </div>
-        {/* end of card element */}
-        {/* Stripe Elements */}
+
         <CardElement className="card-element"></CardElement>
-        {/* Stripe Errors */}
+
         {error && <p className="form-empty">{error}</p>}
-        {/* empty value */}
+
         {isEmpty ? (
           <p className="form-empty">Por favor, preencha seu Nome</p>
         ) : (

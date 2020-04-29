@@ -3,8 +3,7 @@ export function flattenProducts(data) {
   return data.map((item) => {
     //cloudinary
     let image = item.image.url;
-    // local setup no deployment
-    // let image = `${url}${item.image.url}`
+
     return { ...item, image };
   });
 }

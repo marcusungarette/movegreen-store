@@ -10,16 +10,10 @@ function getUserFromLocalStorage() {
 }
 
 function UserProvider({ children }) {
-  // const [user, setUser] = React.useState({
-  //   username: null,
-  //   token: null,
-  // });
-
   const [user, setUser] = React.useState(getUserFromLocalStorage());
 
   // USER LOGIN AND USER LOGOUT
 
-  // send object from - /context/user.js
   const userLogin = (user) => {
     setUser(user);
     localStorage.setItem("user", JSON.stringify(user));
