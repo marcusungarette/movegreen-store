@@ -5,7 +5,7 @@ import Loading from "../Loading";
 
 //ls 233
 export default function FeaturedProducts() {
-  const { loading, featured, products } = React.useContext(ProductContext);
+  const { loading, featured } = React.useContext(ProductContext);
   if (loading) {
     // if its true
     return <Loading />;
