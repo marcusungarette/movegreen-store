@@ -1,6 +1,6 @@
 # React-Ecommerce-store
 
-Application created for the purpose of study, an ecommerce store, create a Login and test :)
+Application created for the purpose of study, an ecommerce store,  please create your Login and buy anything using the fake credit card provided for Stripe.io :)
 
 ## Deployment
 
