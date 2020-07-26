@@ -40,7 +40,7 @@
 
 <p align="center">
 	<a href="https://movegreen.netlify.app/">
-	  <img alt="Scene" 			src="https://ik.imagekit.io/jksiw5jtd5/Macbook_Pro_Edited_XpkMDHvUg9.png">
+	  <img alt="Scene" src="https://ik.imagekit.io/jksiw5jtd5/movegreen-notebookscreen_zXbqMazsZ.png">
 </p>
 
 ## :rocket: Technologies
