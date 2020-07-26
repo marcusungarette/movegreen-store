@@ -1,5 +1,6 @@
 <h1 align="center">
-    <img alt="Logo" src="https://ik.imagekit.io/jksiw5jtd5/movegreen-logo_pOj4j2x5v.svg" />
+	<a href="https://movegreen.netlify.app/">
+	    <img alt="Logo" src="https://ik.imagekit.io/jksiw5jtd5/movegreen-logo_pOj4j2x5v.svg" />
     <br>
 </h1>
 
@@ -25,6 +26,10 @@
   <p>This Website was made for study purpose and the credit card payment was tested in developing mode and is not enable to receive payments.</p>
 </h4>
 
+<h4 align="center">
+	<a href="https://movegreen.netlify.app/">Check MoveGreen
+</h2>
+
 
 <p align="center">
   <a href="#rocket-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -34,7 +39,8 @@
 </p>
 
 <p align="center">
-	  <img alt="Scene" src="https://ik.imagekit.io/jksiw5jtd5/movegreen-notebookscreen_tyhRRmkt2.png">
+	<a href="https://movegreen.netlify.app/">
+	  <img alt="Scene" 			src="https://ik.imagekit.io/jksiw5jtd5/Macbook_Pro_Edited_XpkMDHvUg9.png">
 </p>
 
 ## :rocket: Technologies
@@ -44,7 +50,6 @@ This project was developed with the following technologies:
 ### Back-end:
 -  [Node](https://nodejs.org/en/docs/)
 -  [Strapi](https://nodejs.org/en/docs/)
--  [Stripe](https://stripe.com/) - Payment method
 
 
 
